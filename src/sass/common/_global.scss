@@ -1,5 +1,27 @@
 /** Global styles */
 
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url("{{asset 'fonts/SourceCodePro-Regular.ttf'}}"),
+  url("{{asset 'fonts/icomoon.ttf?o5zacw'}}") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Code Pro Bold';
+  src: url("{{asset 'fonts/SourceCodePro-Bold.ttf'}}"),
+  url("{{asset 'fonts/icomoon.ttf?o5zacw'}}") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Source Code Pro Italic';
+  src: url("{{asset 'fonts/SourceCodePro-Italic.ttf'}}"),
+  url("{{asset 'fonts/icomoon.ttf?o5zacw'}}") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -7,7 +29,7 @@ body {
   min-height: 100vh;
   color: var(--primary-foreground-color);
   font-size: 1rem;
-  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-family: 'Source Code Pro','Source Sans Pro', Roboto, Helvetica, Arial, sans-serif;
   font-display: swap;
   overflow-x: hidden;
   background-color: var(--background-color);
@@ -87,4 +109,17 @@ img.lozad.loaded {
 
 :-moz-placeholder {
   color: $gray;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.align-center {
+  justify-content: center;
+  align-items: center;
 }

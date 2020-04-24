@@ -80,3 +80,13 @@
     direction: ltr;
   }
 }
+
+.text-hero {
+  text-align: center
+}
+
+.text-hero__header, .text-hero__description {
+  background: $white;
+  color: $black !important;
+  width: fit-content
+}

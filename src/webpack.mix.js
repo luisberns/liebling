@@ -29,6 +29,7 @@ mix.js('js/helpers.js', 'js/')
     processCssUrls: false
   })
   .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
+  .copy('sass/fonts/*.ttf', '../assets/fonts/')
   .copy('js/vendor/content-api.min.js', '../assets/js/vendor/')
   .browserSync({
     proxy: "localhost:2368",

@@ -4,4 +4,8 @@
   @include respond-to('medium') {
     padding: 60px 0 40px;
   }
+
+  .in-post__custom {
+    padding-top: 120px
+  }
 }
